@@ -1,0 +1,227 @@
+/* Estilo simples da sorveteria */
+
+body {
+    background-color: #eeeeee;
+    font-family: Arial;
+    margin: 10px;
+}
+
+.app {
+    width: 90%;
+    margin: auto;
+}
+
+/* Pedido */
+.cliente {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.arte-cliente img {
+    width: 90px;
+    height: 90px;
+    margin-right: 10px;
+}
+
+.info-cliente h2 {
+    font-size: 18px;
+}
+
+.texto-pedido {
+    font-size: 14px;
+}
+
+.previa-pedido {
+    display: flex;
+    gap: 5px;
+}
+
+.mini-bola {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.mini-casquinha {
+    width: 12px;
+    height: 18px;
+    background: #d7a36f;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+/* Parte de montar */
+.montagem {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.area-trabalho {
+    display: flex;
+    gap: 15px;
+}
+
+.palco-sorvete {
+    background-color: #dddddd;
+    border: 1px solid #999999;
+    width: 40%;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.pilha-bolas {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.bola {
+    width: 60px;
+    height: 55px;
+    border-radius: 50%;
+    border: 1px solid #777777;
+    margin-bottom: -10px;
+}
+
+.forma-casquinha {
+    width: 80px;
+    height: 100px;
+    background-color: #d9a46e;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.forma-casquinha.waffle {
+    background: repeating-linear-gradient(
+        45deg,
+        #c28a5b 0px,
+        #c28a5b 5px,
+        #e0b37d 5px,
+        #e0b37d 10px
+    );
+}
+
+.forma-casquinha.chocolate {
+    background-color: #8b5547;
+}
+
+/* Escolhas */
+.controles {
+    width: 60%;
+}
+
+.grupo-controles {
+    margin-bottom: 20px;
+}
+
+.grupo-controles h3 {
+    font-size: 16px;
+}
+
+.opcoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.opcao {
+    background-color: #dddddd;
+    border: 1px solid #777777;
+    padding: 7px;
+    font-size: 13px;
+    margin: 2px;
+}
+
+.opcao.selecionado {
+    background-color: #f2bcbc;
+    border: 2px solid #a94444;
+}
+
+.icone-casquinha {
+    display: inline-block;
+    width: 12px;
+    height: 18px;
+    background-color: #d9a46e;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.icone-casquinha.waffle {
+    background-color: #c28a5b;
+}
+
+.icone-casquinha.chocolate {
+    background-color: #8b5547;
+}
+
+.ponto-sabor {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+
+.morango {
+    background-color: #f18b9a;
+}
+
+.cacau {
+    background-color: #795044;
+}
+
+.baunilha {
+    background-color: #f4e4bd;
+}
+
+.pistache {
+    background-color: #a8bb83;
+}
+
+.menta {
+    background-color: #8fc9b1;
+}
+
+/* Botão */
+.entregar {
+    background-color: #c96e73;
+    color: white;
+    border: 1px solid black;
+    padding: 10px;
+    width: 100%;
+}
+
+.entregar:disabled {
+    background-color: #aaaaaa;
+}
+
+.mensagem {
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Ajuste para celular */
+@media (max-width: 600px) {
+    .area-trabalho {
+        display: block;
+    }
+
+    .palco-sorvete {
+        width: 100%;
+        min-height: 220px;
+        margin-bottom: 15px;
+    }
+
+    .controles {
+        width: 100%;
+    }
+
+    .arte-cliente img {
+        width: 70px;
+        height: 70px;
+    }
+}

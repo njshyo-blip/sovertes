@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorveteria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+
+        <div class="cliente">
+            <div class="arte-cliente">
+                <img id="imagemCliente" src="assets/cliente-1.png" alt="Cliente">
+            </div>
+
+            <div class="info-cliente">
+                <h2 id="nomeCliente">Cliente 1</h2>
+                <p class="texto-pedido" id="textoPedido"></p>
+                <div class="previa-pedido" id="previaPedido"></div>
+            </div>
+        </div>
+
+        <div class="montagem">
+            <div class="area-trabalho">
+                <div class="palco-sorvete">
+                    <div class="pilha-bolas" id="pilhaBolas"></div>
+                    <div class="forma-casquinha" id="formaCasquinha"></div>
+                </div>
+
+                <div class="controles">
+                    <div class="grupo-controles">
+                        <h3>Casquinhas</h3>
+                        <div class="opcoes" id="escolhasCasquinha">
+                            <button class="opcao" data-casquinha="tradicional">
+                                <span class="icone-casquinha"></span> Tradicional
+                            </button>
+                            <button class="opcao" data-casquinha="waffle">
+                                <span class="icone-casquinha waffle"></span> Waffle
+                            </button>
+                            <button class="opcao" data-casquinha="chocolate">
+                                <span class="icone-casquinha chocolate"></span> Chocolate
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="grupo-controles">
+                        <h3>Sorvetes</h3>
+                        <div class="opcoes" id="escolhasSabor">
+                            <button class="opcao" data-sabor="morango"><i class="ponto-sabor morango"></i> Morango</button>
+                            <button class="opcao" data-sabor="chocolate"><i class="ponto-sabor cacau"></i> Chocolate</button>
+                            <button class="opcao" data-sabor="baunilha"><i class="ponto-sabor baunilha"></i> Baunilha</button>
+                            <button class="opcao" data-sabor="pistache"><i class="ponto-sabor pistache"></i> Pistache</button>
+                            <button class="opcao" data-sabor="menta"><i class="ponto-sabor menta"></i> Menta</button>
+                        </div>
+                    </div>
+
+                    <button class="entregar" id="botaoEntregar" disabled>Entregar pedido</button>
+                    <p class="mensagem" id="mensagem"></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
